@@ -11,19 +11,19 @@
 </head>
 <body>
   <div id="container"> 
-    <!--Inserir a Imagem-->
-  <img src="Gerador de Senhas - Ponci/src/imagens/cadeado.png" id="password_img" alt="">
-  <!--Titúlo-->
-  <h1 id="title">Gerador de Senha</h1>
+        <!--Inserir a Imagem-->
+      <img src="Gerador de Senhas - Ponci/src/imagens/cadeado.png" id="password_img" alt="">
+      <!--Titúlo-->
+      <h1 id="title">Gerador de Senha</h1>
 
- <!--Caixa de exibição da senha-->
-  <div id="password_container">
-  <span id="password"></span>
-  <!--Botão de copia-->
-<button id="copy">
-<i class="fa-solid fa-copy"></i>
-  </button>
-</div>
+      <!--Caixa de exibição da senha-->
+        <div id="password_container">
+        <span id="password"></span>
+        <!--Botão de copia-->
+      <button id="copy">
+      <i class="fa-solid fa-copy"></i>
+        </button>
+      </div>
 
   <!--Opções de Senhas-->
    <div id="password_items">
@@ -58,8 +58,32 @@
     Adicionar Letras Minúsculas
     </label>
   </div>
-</div>
-    
-  </div>  
+
+  <!--Checkbox Números-->
+  <div class="item">
+    <input type="checkbox" name="includ_number" id="includ_number">
+    <label for="includ_number">
+      Adicionar Número
+    </label>
+  </div>
+  <!--Checkbox Caractere Especial-->
+   
+<div class="item">
+    <input type="checkbox" name="includ_special_charavter" id="includ_special_charavter">
+    <label for="includ_special_charavter">
+      Adicionar Caractre Especial
+    </label>
+  </div>
+    <!--Botão Gerar Senhas-->
+    <button id="generate">
+       Gerar Senha
+    </button>
+
+   </div>
+  </div> 
+
+<!--Script tags para Toastify ( biblioteca do JavaScript) e Script Personalizado-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="src/javascript/script.js"></script>
 </body>
 </html>
